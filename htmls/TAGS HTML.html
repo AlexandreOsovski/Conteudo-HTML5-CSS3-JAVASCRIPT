@@ -15,6 +15,8 @@
 
     <!--PARA VER QUALQUER MUDANÇA FEITA NO SEU SITE, VÁ PARA O SEU NAVEGADOR, APERTE O BOTÃO ESQUERDO DO MOUSE E CLICA EM INSPECIONAR-->
 
+    <hr> <!--FAZ UM TRAÇO PARA A SEPARAÇÃO DO CONTEÚDO-->
+
     <h1>TAGS DE FORMATAÇAO DE TEXTO</h1><!--TAG DE TÍTULO, QUANTO MENOR O NÚMERO DO H(1 OU 2 OU ETC...) MAIOR O TÍTULO E QUANTO MAIOR O NÚMERO, MENOR O TÍTULO-->
 
         <h2>EXEMPLO DE H2</h2>
@@ -42,7 +44,8 @@
             <dd>SUBTITULO DO EXEMPLO</dd> <!--"DEFINITION" FICARÁ IGUAL A TAG SUB, ONDE O <dt> FICA EM CIMA E O <dd> FICA EM BAIXO-->
         </dl>
 
-    <h4>-----------------------------------------------------------------------------------</h4>
+    <!------------------------------------------------------------------------------------->
+    <hr>
 
     <h1>PROPRIEDADES NO HTML</h1>
     <!--AS PROPRIEDADES FICAM DENTRO DAS TAGS, NESTE EXEMPLO EU USEI A PROPRIEDADE "START" E "TYPE"-->
@@ -59,7 +62,8 @@
             <li>EXEMPLO 3</li>
         </ul>
 
-    <h4>-----------------------------------------------------------------------------------</h4>
+    <!------------------------------------------------------------------------------------->
+    <hr>
 
     <h1>IMAGEM NO HTML</h1>
     
@@ -71,7 +75,8 @@
         <!--PODEMOS CRIAR UMA PASTA E ADICIONAR IMAGENS-->
         <img src="/imgs/IMAGEM-SENHOR-INCRIVEL.png"> <!--ASSIM QUE LOCALIZAMOS A IMAGEM, UTILIZANDO A BARRA NO INÍCIO-->
 
-    <h4>-----------------------------------------------------------------------------------</h4>
+    <!------------------------------------------------------------------------------------->
+    <hr>
 
     <h1>ÁUDIO NO HTML</h1>
 
@@ -81,14 +86,16 @@
 
         </audio>
 
-    <h4>-----------------------------------------------------------------------------------</h4>
+    <!------------------------------------------------------------------------------------->
+    <hr>
 
     <h1> VIDEO NO HTML </h1>
         <video controls width="200px" height="100px"> <!--A TAG "VIDEO" FUNCIONA PARA ADICIONARMOS UM VIDEO NO NOSSO SITE-->
             <source src="/video/video.mp4" type="video/mp4">
         </video>
 
-    <h4>-----------------------------------------------------------------------------------</h4>
+    <!------------------------------------------------------------------------------------->
+    <hr>
 
     <h1>IFRAMES</h1>
     <!--PERMITE PARA QUE A GENTE TRAGA PARA O NOSSO SITE OUTRO SITE-->
@@ -98,7 +105,8 @@
         <iframe src="https://rafaelfranco.mobi/"></iframe>          <!--PODEMOS ADICIONAR VÁRIOS IFRAMES, NÃO HÁ LIMITAÇÃO-->
                                                                     <!--PODEMOS MUDAR O TAMANHO DO IFRAME, BASTA UTILIZAR O QUE FOI ENSINADO ANTERIORMENTE-->
 
-    <h4>-----------------------------------------------------------------------------------</h4>
+    <!------------------------------------------------------------------------------------->
+    <hr>
 
     <!--LINKS E ÂNCORAS-->
     <!--PODEMOS ADICIONAR LINKS NAS IMAGENS E FAZER COM QUE ELE NOS REDIRECIONE PARA OUTRO SITE-->
@@ -118,7 +126,8 @@
             <li><a href="CORPO.html">LINK PARA O CORPO HTML</a></li>
         </ul>
 
-    <h4>-----------------------------------------------------------------------------------</h4>
+    <!------------------------------------------------------------------------------------->
+    <hr>
 
     <h1>TABELA IMPLICITA</h1>
 
@@ -153,7 +162,8 @@
             </tr>
         </table>
 
-    <h4>-----------------------------------------------------------------------------------</h4>
+    <!------------------------------------------------------------------------------------->
+    <hr>
 
     <h1>TABELA EXPLICITA</h1>
     <h4>ESSA É A MELHOR FORMA PARA SE TRABALHAR NO CSS</h4>
@@ -193,7 +203,9 @@
                 </tr>
             </tbody>
         </table>
-    <h4>-----------------------------------------------------------------------------------</h4>
+
+    <!------------------------------------------------------------------------------------->
+    <hr>
 
     <!--SERÃO FEITAS UTILIZADAS ALGUMAS ARTIMANHAS DO CSS NO HTML, AFIM DE DEIXAR MELHOR VISUALMENTE, E ASSIM, VC JÁ 
                         ENTENDERÁ MELHOR COMO IRÁ FUNCIONAR O CSS-->
@@ -224,11 +236,14 @@
                     <td> TESTE DE TABELA </td>
                     <td> PROCESSANDO </td>
 
-                    <td> <!--PODEMOS ADICIONAR LINKS E IMAGENS EM TABELAS, MAS SEMPRE UTILIZANDO A TAG DE ANCORAGEM-->
-                        <a href="https://www.youtube.com/watch?v=BFH_byhTAfw"> 
+
+                    <!--PODEMOS ADICIONAR LINKS E IMAGENS EM TABELAS, MAS SEMPRE UTILIZANDO A TAG DE ANCORAGEM-->
+                    <td> 
+                        <a href="https://www.youtube.com/watch?v=BFH_byhTAfw" target="_blank"> 
                             <img src="https://images.uncyc.org/pt/3/37/Rei_do_Kuduro.jpeg" width="100px" height="50px">
                         </a>
                     </td>
+
                 </tr>
                 <tr>
                     <td> 1 </td>
@@ -246,10 +261,12 @@
                 </tr>
             </tbody>
         </table>
-        <h4>-----------------------------------------------------------------------------------</h4>
+
+        <!------------------------------------------------------------------------------------->
+        <hr>
 
         <h1>FORMULÁRIOS</h1> 
-        <h3>É a tag mais importente do HTML, serve para colocar dados no sistema!</h3>
+        <h3>É A TAG MAIS IMPORTANTE DO HTML, SERVE PARA COLOCAR DADOS NO SISTEMA.</h3>
         <p>Exemplos do formulários:</p>
         <ul>
             <li>Busca</li>
@@ -267,11 +284,269 @@
         <form method="get" action="ReceberDados" enctype="multipart/form-data"> <!--O "METHOD = GET" É A FORMA QUE O DADO VAI SER ENVIADO PELA PRÓPRIA URL DO SITE, ESSA FORMA DE ENVIO NÃO É SEGURO-->
             <!--AQUI VÃO TODOS OS CAMPOS DO FORMULÁRIO-->                       <!--NUNCA USAR O METHOD GET-->
         </form>
-        <h4>-----------------------------------------------------------------------------------</h4>
 
-        <h1>fORMULÁRIOS - INPUTS BÁSICOS </h1>
+        <!------------------------------------------------------------------------------------->
+        <hr>
+
+        <h1>FORMULÁRIOS - INPUTS BÁSICOS </h1>
+        <h3>ESSES FORMULÁRIOS SÃO USADOS COM MUITA FREQUÊNCIA</h3>
+        <ul>
+            <li>TEXT</li>
+            <li>PASSWORD</li>
+            <li>RADIO</li>
+            <li>CHECKBOX</li>
+            <li>TEXTAREA</li>
+            <li>FILE</li>
+        </ul>
+
+        <!--VOU MONTAR "UMA FORM" CARA CADA INPUT PARA FACILITAR O APRENDIZADO-->
+
+        <form method="post" action="/htmls/CORPO.html">
+            <label for=""> TEXT </label> <!--TAG "LABEL" SERVE PARA COLOCAR O TÍTULO DE UM CAMPO-->
+            <input type="text" name="texto"/>
+        </form> <br>
+
+        <form method="post">
+            <label> PASSWORD </label>
+            <input type="password" name="senha"/> <!--A TAG "NAME" É UTILIZADA PARA SE USAR E LOCALIZAR NO BACK-END-->
+        </form> <br>
+
+        <form method="post">
+            <label> RADIO </label>
+            <input type="radio" name="ESCOLHA" class=""/> <!--O PARÂMETRO "CLASS" É USADA BÁSICAMENTE PARA SE USAR NO CSS3, POIS FICA MAIS FÁCIL DE LOCALIZAR-->
+        </form> <br>                                                  <!--CSS-->
+
+        <form>
+            <label>CHECKBOX</label>
+            <input type="checkbox" name="CHECKBOX" id=""/> <!--O PARÂMETRO "ID" É O IDENTIFICADOR ÚNICO DO ELEMENTO, SE USA EM JAVASCRIPT -->
+        </form> <br>                                                 <!--JAVASCRIPT-->
+
+        <form method="post">
+            <label>FILE</label>
+            <input type="file" name="arquivo"/>
+        </form> <br>
+
+        <form method="post">
+            <label>TEXTAREA</label>
+            <textarea name="textarea" id="" cols="10" rows="2"></textarea> <!--PODEMOS INTERPRETAR A TAG "TEXTAREA" COMO POR EXEMPLO, UMA ÁREA DE COMENTÁRIOS NO YOUTUBE -->
+        </form> <br>
 
 
+        <!------------------------------------------------------------------------------------->
+        <hr>
+
+        
+        <!--UTILIZAR 1 FORM PARA VÁRIOS INPUTS-->
+        <form>
+
+            <label for=""> TEXT </label> 
+            <input type="text" name="texto"/> <br> <br>
+
+            <label> PASSWORD </label>
+            <input type="password" name="senha"/> <br> <br>
+
+            <label> RADIO </label> 
+            <input type="radio" name="ESCOLHA" class=""/> <br> <br>
+
+            <label>CHECKBOX</label>
+            <input type="checkbox" name="CHECKBOX" id=""/> <br> <br>
+
+            <label>FILE</label>
+            <input type="file" name="arquivo"/> <br> <br>
+
+            <label>TEXTAREA</label>
+            <textarea name="textarea" id="" cols="30" rows="10"></textarea> <br>
+            
+        </form>
+
+        <!------------------------------------------------------------------------------------->
+        <hr>
+
+        <h1>FORMULÁRIOS - SELECTS</h1>
+        <h3>É MUITO PARECIDO COM O RADIO, PERMITE MAIS VALORES</h3>
+
+        <label>SEXO</label>
+        <select name="selecione" id="" class=""> <!--A TAG "SELECT" DEPENDE DE "OPTIONS" DENTRO DELA-->
+
+            <option value="masculino">Masculino</option>
+            <option value="feminino">Feminino</option>
+            <option selected value="tanto">Indefinfido</option> <!--O PARÂMETRO "SELECTED" JÁ DEIXA PRÉ-SELECIONADO A OPÇÃO-->
+
+        </select> <br><br>
+
+        <label>CARROS</label>
+        <select name="carros" id="" class=""> <br>  <br>
+            <optgroup label="alemães"> <!--A TAG "OPTGROUP" POSSUI SEPARADORES QUE NÃO SÃO SELECIONADOS-->
+                <option value="mercedes"> MERCEDES </option>
+                <option value="Audi">Audi</option>
+            </optgroup> <br> <br>
+            <optgroup label="suecos">
+                <option value="volvo"> volvo </option>
+                <option value="saab">saab</option>
+            </optgroup>
+        </select>
+
+        <!------------------------------------------------------------------------------------->
+        <hr>
+
+        <h1>FORMULÁRIOS - BUTTONS E SUBMITS</h1>
+        <h3>TODO FORMULÁRIO PRECISA TER OBRIGATORIAMENTE UM DELES, SÃO APARENTEMENTE PARECIDOS, MAS POSSUEM FUNÇÕES DIFERENTES<br>
+         OS BUTTONS NECESSITAM DE JAVASCRIPT PARA QUE SEJA DETERMINADA A FUNÇÃO DELE <br>
+         OS SUBMITS SÃO BOTÕES QUE JÁ POSSUEM UM COMPORTAMENTO, OU SEJA, ELES POSSUEM A FUNÇÃO DE "SUBMETER" O SEU FORMULÁRIO A UMA PÁGINA DE DESTINO </h3>
+
+        <form method="post" action="https://www.youtube.com">
+            <input type="submit" value="botão com açãor"> <br> <br>
+            <input type="button" value="botão sem ação"> <br> <br>
+        </form>
+
+        <!------------------------------------------------------------------------------------->
+        <hr>
+
+        <h1>FORMULÁRIOS - AUTO-COMPLETE e PLACEHOLDER</h1>
+        <h3>AUTO-COMPLETE COMO O NOME JÁ DIZ, ELE AUTO-COMPLETA UMA DETERMINADA ESCRITA QUE VOÇE IRÁ FAZER.<br>
+        O PLACEHOLDER, ELE DA UMA DICA PARA O USUÁRIO SOBRE O QUE ELE DEVE ESCREVER NO DETERMINADO CAMPO ACESSADO</h3>
+
+        <form>
+            <label> Auto-Complete</label>
+            <input placeholder="insira a sua senha" type="password" autocomplete="off"> <br> <br> <!--FOI DETERMINADO QUE O AUTOCOMPLETE DA SENHA ESTÁ DESLIGADO-->
+
+            <label>Placeholder</label>
+            <input placeholder="insira seu nome" type="text" autocomplete="on"> <br> <br> <!--FOI DETERMINADO QUE O AUTOCOMPLETE DO NOME ESTÁ LIGADO-->
+
+            <label>Carros</label>
+            <input type="text" placeholder="insira o carro que vc tem" list="lista_carros" name="carro"> 
+            <datalist id="lista_carros"> <!--PARA QUE A LISTA FUNCIONE, PRECISAMOS USAR O PARÂMETRO "LIST" COM O NOME QUE FOI ATRIBUIDO NO "ID"-->
+                <option value="HB20"/>
+                <option value="March"/>
+                <option value="Cruze"/>
+            </datalist>
+        </form>
+
+        <!------------------------------------------------------------------------------------->
+        <hr>
+
+        <h1>FORMULÁRIOS - INPUTS ESPECIAIS</h1>
+        <h3>SÃO INPUTS QUE NÃO SÃO MUITOS UTILIZADOS, POR ISSO SÃO ESPECIAIS.</h3>
+        
+        <form method="post" action="https://www.w3schools.com/tags/tag_input.asp" target="_blank">
+            <label>Caso queira saber mais sobres os inputs, basta acessar</label>
+            <input type="submit" value=" a documentação dos inputs"> <br> <br>
+
+        <label>OS PRINCIPAS INPUTS SÃO:</label>
+        <ul>
+            <li>Color</li>
+            <li>Date</li>
+            <li>Email</li>
+            <li>Range</li>
+            <li>Tel</li>
+            <li>Search</li>
+        </ul>
+        <br>
+
+        <label>COR</label> 
+        <input type="color" name="cor" id=""> <!--PERMITE QUE O USUÁRIO ESCOLHA UMA COR-->
+        <br> <br>
+
+        <label>DATE</label>
+        <input type="date" name="data" id=""> <!--PERMITE QUE O USUÁRIO POSSA SELECIONAR UMA DATA-->
+        <br> <br>
+
+        <label>E-mail</label>
+        <input type="email" name="email" id=""> <!--PERMITE QUE O USUÁRIO COLOQUE UM E-MAIL, FAZ BASTANTE DIFERENÇA NO MOBILE-->
+        <br> <br>
+
+        <label> RANGE </label>
+        <input type="range" name="intervalo-de-valores" id="" max="100" min="0"> <!--PERMITE QUE O USUÁRIO ESCOLHA UM DETERMINADO VALOR-->
+        <br> <br>
+
+        <label>TEL</label>
+        <input type="tel" name="telefone" id=""> <!--PERMITE QUE O USUÁRIO COLOQUE UM NÚMERO DE TELEFONE, FAZ BASTANTE DIFERENÇA NO MOBILE, POIS ELE AUTOMATICAMENTE ACIONA O TECLADO NUMÉRICO-->
+        <br> <br>
+
+        <label>Search</label>
+        <input type="search" name="pesquisar" id=""> <!--PERMITE QUE O USUÁRIO FAÇA UMA DETERMINADA PESQUISA DENTRO DO SITE, SEJA DE PRODUTO OU QUALQUER OUTRA COISA QUE POSSUA NO SEU SITE-->
+
+
+        <!------------------------------------------------------------------------------------->
+        <hr>
+
+        <h1>CONTAINERS - DIV, SECTIONS E SPAN</h1>
+        <h3>CHEGAMOS NA PARTE MAIS IMPORTANTE DO HTML, A PARTE DOS CONTAINERS, ELAS SÃO TAGS PARA O AGRUPAMENTO DE CONTEÚDOS DENTRO DELAS</h3>
+
+        <section> </section> <!--FAZ A SEPARAÇÃO DE UMA ÁREA DENTRO DO HTML, FICA MAIS FÁCIL PARA EDITAR A APARÊNCIA NO CSS OU ADICIONAR UMA FUNCIONALIDADE DE JAVASCRIPT-->
+                                <!--NÃO MUDA NADA VISUALMENTE, MUDA APENAS A ESTRUTURA PARA FÁCIL EDIÇÃO, FICARÁ MAIS CLARO QUANDO FOR ESTUDAR O CSS3-->
+
+        <!------------------------------------------------------------------------------------->
+
+        <div></div> <!--POSSUI O MESMO COMPORTAMENTO DA SECTION-->
+
+        <!------------------------------------------------------------------------------------->
+
+        <span></span> <!--É UTILIZADA PARA FORMATAÇÃO DE TEXTO-->
+
+        <!------------------------------------------------------------------------------------->
+
+        <section>
+            <h3>EXEMPLOS DE COMO FUNCIONAM</h3>
+        </section>
+
+        <section class=""> <!--PODEMOS UTILIZAR DESTA FORMA QUE É UMA FORMA SIMPLES-->
+            <form>
+                <label>QUALQUER COISA</label>
+                <input type="text" name="qualquercoisa" id="">
+            </form>
+        </section>
+
+        <!------------------------------------------------------------------------------------->
+
+        <div class=""> <!--PODEMOS UTILIZAR DESTA FORMA QUE É UMA FORMA SIMPLES-->
+            <form>
+                <label>QUALQUER COISA</label>
+                <input type="text" name="qualquercoisa" id="">
+            </form>
+        </div>
+
+        <!------------------------------------------------------------------------------------->
+
+        <div class="">
+            <span>
+                <a> qualquer coisa</a>
+                <h1> qualquer coisa</h1>
+                <p> qualquer coisa</p>
+            </span>
+        </div>
+
+        <!------------------------------------------------------------------------------------->
+
+        <section class="">
+            <span>
+                <a> qualquer coisa</a>
+                <h1> qualquer coisa</h1>
+                <p> qualquer coisa</p>
+            </span>
+        </section>
+
+        <!------------------------------------------------------------------------------------->
+
+        <section class="" id="">
+            <div>
+                <form>
+                    <input type="text">
+                    <input type="numeber">
+                </form>
+            </div>
+        </section>
+
+        <!------------------------------------------------------------------------------------->
+        <div class="" id="">
+            <section>
+                <a> qualquer coisa</a>
+                <h1> qualquer coisa</h1>
+                <p> qualquer coisa</p>
+            </section>
+        </div>
+
+        <!------------------------------------------------------------------------------------->
 
 </body>
 </html>
