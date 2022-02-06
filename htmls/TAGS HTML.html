@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documento para melhor aprendizado</title>
+</head>
+<body>
+
+    <!--PARA MONTAR A ESTRUTURA BÁSICA DO HTML, BASTA APERTAR "!" ESCLAMAÇÃO E APERTAR "TAB"-->
+
+    "<!---->" <!--ESSA É A ESTRUTURA PARA FAZER UM COMENTÁRIO EM HTML, 
+    SERÁ MUITO ÚTIL PARA FAZER OS COMENTÁRIOS NECESSÁRIOS NO SEU CÓDIGO, USE E ABUSE-->
+
+    <!--PARA VER QUALQUER MUDANÇA FEITA NO SEU SITE, VÁ PARA O SEU NAVEGADOR, APERTE O BOTÃO ESQUERDO DO MOUSE E CLICA EM INSPECIONAR-->
+
+    <h1>TAGS DE FORMATAÇAO DE TEXTO</h1><!--TAG DE TÍTULO, QUANTO MENOR O NÚMERO DO H(1 OU 2 OU ETC...) MAIOR O TÍTULO E QUANTO MAIOR O NÚMERO, MENOR O TÍTULO-->
+
+        <h2>EXEMPLO DE H2</h2>
+        <p>Meu nome é Alexandre</p> <!--TAG DE PARÁGRAFO-->
+        <br> <!--TAG DE QUEBRA, ADICIONA UMA LINHA INVISÍVEL, NÃO POSSUI FECHAMENTO POIS NÃO É UMA TAG QUE POSSUÍ CONTEÚDO DENTRO-->
+        <p>EXEMPLO DE <b>NEGRITO</b></p> <!-- "BOLD" TAG PAARA ADICIONAR O NEGRITO EM UMA DETERMINADA PARTE DO TEXTO-->
+        <p>EXEMPLO DE <i>ITÁLICO</i></p> <!--ADICIONA O "ITÁLICO" NO TEXTO-->
+        <sup>EXEMPLO DE SUP</sup> <!--ADICIONA O TEXTO UM POUCO ACIMA DO TEXTO PADRÃO, POR EXEMPLO 4^3-->
+        <sub>EXEMPLO DE SUB</sub> <!--ADICONA O TEXTO UM POUCO A BAIXO DO TEXTO PADRÃO, AO CONTRÁRIO DO <SUP>-->
+
+        <!--TAGS DE LISTAS-->
+        <ol> <!-- "ORDERED LIST" TAG DE LISTA ORDENADA, OREDENARÁ DE FORMA NUMÉRICA-->
+            <li>EXEMPLO 1</li> <!--"LIST" TAG DE LISTA-->
+            <li>EXEMPLO 2</li>
+            <li>EXEMPLO 3</li>
+        </ol>
+
+        <ul> <!--"URNODERED LIST" TAG DE LISTA DESORDENADA, NÃO ORDENARÁ DE FORMA NUMÉRICA-->
+            <li>EXEMPLO 1</li><!--"LIST" TAG DE LISTA-->
+            <li>EXEMPLO 2</li>
+            <li>EXEMPLO 3</li>
+        </ul>
+        <dl> <!--"DEFINITION LIST" LISTA DE DEFINIÇÃO-->
+            <dt>EXEMPLO</dt> <!--"DEFINITION TITTLE" DEFINIÇÃO DO TÍTULO-->
+            <dd>SUBTITULO DO EXEMPLO</dd> <!--"DEFINITION" FICARÁ IGUAL A TAG SUB, ONDE O <dt> FICA EM CIMA E O <dd> FICA EM BAIXO-->
+        </dl>
+
+    <h4>-----------------------------------------------------------------------------------</h4>
+
+    <h1>PROPRIEDADES NO HTML</h1>
+    <!--AS PROPRIEDADES FICAM DENTRO DAS TAGS, NESTE EXEMPLO EU USEI A PROPRIEDADE "START" E "TYPE"-->
+
+        <ol start="10"> <!--PODEMOS USAR PRORPIEDADES DENTRO DAS TAGS, OU SEJA, -OL- COMEÇA PELO 10 E SIGA A ORDEM CRESCENTE-->
+            <li>EXEMPLO 1</li>
+            <li>EXEMPLO 2</li>
+            <li>EXEMPLO 3</li>
+        </ol>
+
+        <ul type="SQUARE"> <!--CASO NÃO QUEIRA QUE A LISTA POSSUA AS "BOLINHAS" E SIM UM QUADRADO, PODEMOS DEFINIR COMO TYPE="SQUARE"-->
+            <li>EXEMPLO 1</li> <!--"LIST" TAG DE LISTA-->
+            <li>EXEMPLO 2</li>
+            <li>EXEMPLO 3</li>
+        </ul>
+
+    <h4>-----------------------------------------------------------------------------------</h4>
+
+    <h1>IMAGEM NO HTML</h1>
+    
+        <img src="https://images3.memedroid.com/images/UPLOADED622/6148bbea6dd12.jpeg" alt="IMAGEM DO SENHOR INCRIVEL MEME" width="500px" height="300px"> <!--UTILIZAMOS A TAG IMG PARA ADICIONAR UMA IMAGEM, O "SRC" SIGNIFICA "SEARCH" OU SEJA, PROCURAR-->
+        <img src="" alt=""> <!--A PROPRIEDADE "alt" SERVE PARA DEFINIR DO QUE SE TRATA A IMAGEM, É UTILIZADA PARA LEITORES DE TELA PARA AJUDAR CEGOS A VEREM-->
+        <img src="" alt="" width="" height=""> <!-- A PROPRIEDADE "WIDTH" SIGNIFICA "LARGURA" E "HEIGHT" SIGNIFICA "ALTURA"
+                                                    ESSE TIPO DE PROPRIEDADE, NÓS UTILIZAMOS NO CSS-->
+
+        <!--PODEMOS CRIAR UMA PASTA E ADICIONAR IMAGENS-->
+        <img src="/imgs/IMAGEM-SENHOR-INCRIVEL.png"> <!--ASSIM QUE LOCALIZAMOS A IMAGEM, UTILIZANDO A BARRA NO INÍCIO-->
+
+    <h4>-----------------------------------------------------------------------------------</h4>
+
+    <h1>ÁUDIO NO HTML</h1>
+
+        <audio controls autoplay> <!--TAG "ÁUDIO" FUNCIONA PARA ADICIONAR UM ÁUDIO NO HTML E CONTROLS PARA ADICIONAR OS CONTROLES PARA AVANÇAR E PARAR O ÁUDIO-->
+                        <!--O PARÂMETRO "AUTOPLAY" SERVE PARA TOCAR O ÁUDIO AUTOMÁTICAMENTE-->
+            <source src="/audio/audio.mp3" type="audio/mpeg"> <!--UTILIZAMOS O PARÂMETRO "TYPE" PARA ESPECIFICAR O "TIPO" DO ARQUIVO QUE COLOCAMOS-->
+
+        </audio>
+
+    <h4>-----------------------------------------------------------------------------------</h4>
+
+    <h1> VIDEO NO HTML </h1>
+        <video controls width="200px" height="100px"> <!--A TAG "VIDEO" FUNCIONA PARA ADICIONARMOS UM VIDEO NO NOSSO SITE-->
+            <source src="/video/video.mp4" type="video/mp4">
+        </video>
+
+    <h4>-----------------------------------------------------------------------------------</h4>
+
+    <h1>IFRAMES</h1>
+    <!--PERMITE PARA QUE A GENTE TRAGA PARA O NOSSO SITE OUTRO SITE-->
+
+        <h2>carregando um site com iframe</h2>
+        <iframe src="https://github.com/AlexandreOsovski"></iframe> <!--HÁ ALGUNS SITES QUE BLOQUEAM ESSA OPÇÃO, COMO POR EXEMPLO O "GITHUB" ABRAM APENAS EM OUTRA JANELA-->
+        <iframe src="https://rafaelfranco.mobi/"></iframe>          <!--PODEMOS ADICIONAR VÁRIOS IFRAMES, NÃO HÁ LIMITAÇÃO-->
+                                                                    <!--PODEMOS MUDAR O TAMANHO DO IFRAME, BASTA UTILIZAR O QUE FOI ENSINADO ANTERIORMENTE-->
+
+    <h4>-----------------------------------------------------------------------------------</h4>
+
+    <!--LINKS E ÂNCORAS-->
+    <!--PODEMOS ADICIONAR LINKS NAS IMAGENS E FAZER COM QUE ELE NOS REDIRECIONE PARA OUTRO SITE-->
+    <h1>IMAGEM COM LINK PARA REDIRECIONAMENTO E lISTA DE PÁGINAS WEB</h1>
+
+        <a href="https://www.youtube.com/watch?v=ZUfp4KHK0A0"> <!--A TAG " a " SIGNIFICA "ancoragem" E "href" SIGNICA "Referência para Hipertexto"-->
+            <img src="https://img.ifunny.co/images/a678aef90548219a3bf85573b57417c658eb46bd22683a618400434404118dd7_1.webp"
+            width="500px" height="300px">
+        </a>
+        <ul>
+            <li><a href="https://www.youtube.com/" target="_blank">YOUTUBE</a></li> <!--QUANDO ADICIONAMOS O PARÂMETRO "TARGET" ELE ABRA EM OUTRA JANELA DO BROWSER-->
+            <li><a href="https://www.facebook.com/" target="_blank">FACEBOOK</a></li> <!--QUANDO ADICIONAMOS O PARÂMETRO "TARGET" ELE ABRA EM OUTRA JANELA DO BROWSER-->
+            <li><a href="https://www.twitter.com">TWITTER</a></li><!--QUANDO NÃO SE TEM O PARÂMETRO "TARGET" O LINK ABRE NA MESMA JANELA DO BROWSER-->
+        </ul>
+        <!--PODEMOS FAZER ISSO COM AS PÁGINAS CRIADAS POR NÓS NO HTML-->
+        <ul>
+            <li><a href="CORPO.html">LINK PARA O CORPO HTML</a></li>
+        </ul>
+
+    <h4>-----------------------------------------------------------------------------------</h4>
+
+    <h1>TABELA IMPLICITA</h1>
+
+        <table> <!--TAG "TABLE" OU "TABELA"-->
+            <tr bgcolor="green"> <!-- TAG "TABLE-ROW" OU, LINHA DA TABELA-->
+                <td> #ID </td> <!--TAG "TABLE-DATA" OU, DADOS DA TABELA-->
+                <td> PROJETO</td>
+                <td> TITULO </td>
+                <td> STATUS </td>              
+                <td> COMENTÁRIOS </td>
+            </tr>
+            <tr>
+                <td> 1 </td> 
+                <td> NOME DO PROJETO </td>
+                <td> TESTE DE TABELA </td>
+                <td> PROCESSANDO </td>
+                <td> 0 </td>
+            </tr>
+            <tr>
+                <td> 1 </td>
+                <td> NOME DO PROJETO </td>
+                <td> TESTE DE TABELA </td>
+                <td> PROCESSANDO </td>
+                <td> 0 </td>
+            </tr>
+            <tr>
+                <td> 1 </td>
+                <td> NOME DO PROJETO </td>
+                <td> TESTE DE TABELA </td>
+                <td> PROCESSANDO </td>
+                <td> 0 </td>
+            </tr>
+        </table>
+
+    <h4>-----------------------------------------------------------------------------------</h4>
+
+    <h1>TABELA EXPLICITA</h1>
+    <h4>ESSA É A MELHOR FORMA PARA SE TRABALHAR NO CSS</h4>
+
+        <table> <!--TAG "TABLE" OU "TABELA"-->
+            <thead bgcolor="yellow"> <!--TAG "TABLE-HEAD" (CABEÇA DA TABELA)-->
+                <tr> <!-- TAG "TABLE-ROW" OU, LINHA DA TABELA-->
+                    <td> #ID </td> <!--TAG "TABLE-DATA" (DADOS DA TABELA)-->
+                    <td> PROJETO</td>
+                    <td> TITULO </td>
+                    <td> STATUS </td>              
+                    <td> COMENTÁRIOS </td>
+                </tr>
+            </thead>
+
+            <tbody> <!--TAG "TABLE-BODY" (CORPO DA TABELA)-->
+                <tr>
+                    <td> 1 </td>
+                    <td> NOME DO PROJETO </td>
+                    <td> TESTE DE TABELA </td>
+                    <td> PROCESSANDO </td>
+                    <td> 0 </td>
+                </tr>
+                <tr>
+                    <td> 1 </td>
+                    <td> NOME DO PROJETO </td>
+                    <td> TESTE DE TABELA </td>
+                    <td> PROCESSANDO </td>
+                    <td> 0 </td>
+                </tr>
+                <tr>
+                    <td> 1 </td>
+                    <td> NOME DO PROJETO </td>
+                    <td> TESTE DE TABELA </td>
+                    <td> PROCESSANDO </td>
+                    <td> 0 </td>
+                </tr>
+            </tbody>
+        </table>
+    <h4>-----------------------------------------------------------------------------------</h4>
+
+    <!--SERÃO FEITAS UTILIZADAS ALGUMAS ARTIMANHAS DO CSS NO HTML, AFIM DE DEIXAR MELHOR VISUALMENTE, E ASSIM, VC JÁ 
+                        ENTENDERÁ MELHOR COMO IRÁ FUNCIONAR O CSS-->
+
+    <h1>TABELA EXPLICITA</h1>
+    <h4>COM ALGUMAS ALTERAÇÕES VISUAIS DE CSS DIRETAMENTE NO HTML!!!</h4>
+
+        <table cellpadding="10px" cellspacing="10px"border="1" width="1000px"> <!--TAG "TABLE" OU "TABELA" COM OS PARÂMETROS "BORDER" (BORDA) E "WIDTH" (LARGURA)-->
+                                                            <!--TAG "CELLPADDING" (MARGEM INTERNA) IGUAL A 10px-->
+                                                            <!--TAG "CELLSPACING" (ESPAÇO DAS CÉLULAR) IGUAL A 10px-->
+            <thead bgcolor="brown" >
+                <tr> 
+                    <td align="center" width="10%"> #ID </td> <!--FOI UTILIZADO O PARAMETRO "ALIGN = CENTER" OU (ALINHAMENTO NO CENTRO) PARA CENTRALIZAR TODOS OS TITULOS-->
+                    <td align="center" width="30%"> PROJETO</td>
+                    <td align="center" width="40%"> TITULO </td>  <!--PEGAMOS O VALOR DA TABELA E DIVIDIMOS EM CADA LINHA, OU SEJA, PEGAMOS "40%" DOS "1000px" QUE FOI DEFINIDO-->
+                    <td align="center" width="10%"> STATUS </td>              
+                    <td align="center" width="10%"> COMENTÁRIOS </td>
+                    <!--TAG "COLSPAN" SIGNIFICA QUE A CÉLULA TEM QUE OCUPAR O DETERMINADO NÚMERO QUE FOI DEFINIDO-->
+                    <!--PODEMOS EXCLUIR UM DOS "TD" E DEFINIR NO "TD" ANTERIOR QUE O COLSPAN SEJA IGUAL A 2 "colspan="2-->
+                    <!--DEVEMOS SOMAR O "WIDTH" DO "TD" EXLUIDO COM O ANTERIOR A ELE-->
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td> 1 </td>
+                    <td> NOME DO PROJETO </td>
+                    <td> TESTE DE TABELA </td>
+                    <td> PROCESSANDO </td>
+
+                    <td> <!--PODEMOS ADICIONAR LINKS E IMAGENS EM TABELAS, MAS SEMPRE UTILIZANDO A TAG DE ANCORAGEM-->
+                        <a href="https://www.youtube.com/watch?v=BFH_byhTAfw"> 
+                            <img src="https://images.uncyc.org/pt/3/37/Rei_do_Kuduro.jpeg" width="100px" height="50px">
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td> 1 </td>
+                    <td> NOME DO PROJETO </td>
+                    <td> TESTE DE TABELA </td>
+                    <td> PROCESSANDO </td>
+                    <td> 0 </td>
+                </tr>
+                <tr>
+                    <td> 1 </td>
+                    <td> NOME DO PROJETO </td>
+                    <td> TESTE DE TABELA </td>
+                    <td> PROCESSANDO </td>
+                    <td> 0 </td>
+                </tr>
+            </tbody>
+        </table>
+        <h4>-----------------------------------------------------------------------------------</h4>
+
+        <h1>FORMULÁRIOS</h1> 
+        <h3>É a tag mais importente do HTML, serve para colocar dados no sistema!</h3>
+        <p>Exemplos do formulários:</p>
+        <ul>
+            <li>Busca</li>
+            <li>Login</li>
+            <li>Cadastro</li>
+            <li>Formulario de compra</li>
+            <li>Bate-papo</li>
+        </ul>
+
+        <p>O Formulario é composto pela Tag "form" </p>
+        <form method="post" action="ReceberDados" enctype="multipart/form-data"> <!--POSSUI O PARAMETRO "METHOD" (MÉTODO) É A FORMA QUE O DADO VAI SER ENVIADO, OU SEJA O "POST" , "ACTION" (AÇÃO) E "ENCTYPE" ()-->
+            <!--AQUI VÃO TODOS OS CAMPOS DO FORMULÁRIO-->                        <!--"ACTION" É A PÁGINA DE DESTINO QUE IRÁ RECEBER OS DADOS, OU SEJA, UM SCRIPT DE BACK-END QUE VAI RECEBER AS INFORMAÇÕES-->
+                                                                                <!--SÓ UTILIZAMOS O " enctype="multipart/form-data" QUANDO O FORMULÁRIO FOR RECEBER UM ARQUIVO, POR EXEMPLO, QUANDO FOR FEITO UM CADASTRO E PRECISARÁ TER A FOTO DO CLIENTE-->
+        </form>
+        <form method="get" action="ReceberDados" enctype="multipart/form-data"> <!--O "METHOD = GET" É A FORMA QUE O DADO VAI SER ENVIADO PELA PRÓPRIA URL DO SITE, ESSA FORMA DE ENVIO NÃO É SEGURO-->
+            <!--AQUI VÃO TODOS OS CAMPOS DO FORMULÁRIO-->                       <!--NUNCA USAR O METHOD GET-->
+        </form>
+        <h4>-----------------------------------------------------------------------------------</h4>
+
+        <h1>fORMULÁRIOS - INPUTS BÁSICOS </h1>
+
+
+
+</body>
+</html>
