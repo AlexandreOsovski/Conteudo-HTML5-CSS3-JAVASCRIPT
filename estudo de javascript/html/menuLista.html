@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/CSS/estiloLista.css" rel="stylesheet">
+    <script src="/estudo de javascript/javascript/lista.js"></script>
+    <title>Decisões em javascript</title>
+</head>
+<body onload="quandoAbrirAPage() , decisaoInicial()"> <!-- QUANDO CARREGAR A PÁGINA, CARREGAR A FUNÇÃO QUE ESCONDE O MENU  -->
+
+
+<!--PARÂMETRO PARA CLICAR E APARECER O MENU, MAS NÃO SOME, APENAS APARECE-->
+    <ul onclick="aparecerMenu()"> Menu  <!-- QUANDO CLICAR NO MENU, CHAMAR A FUNÇÃO DE APARECER O MENU -->
+        <li class="subMenu"> item 1 </li>
+        <li class="subMenu"> item 2 </li>
+        <li class="subMenu"> item 3 </li>
+        <li class="subMenu"> item 4 </li>
+        <li class="subMenu"> item 5 </li>
+    </ul>
+
+
+<!--ESQUEMA DE DECISÃO USANDO PARÂMETROS INDIVIDUAIS, APARECER E SUMIR AO CLICAR-->
+    <ul onclick="decisao()"> Menu2
+        <li class="subMenu2"> item 1 </li>
+        <li class="subMenu2"> item 2 </li>
+        <li class="subMenu2"> item 3 </li>
+        <li class="subMenu2"> item 4 </li>
+        <li class="subMenu2"> item 5 </li>
+    </ul>
+
+
+
+<!--ESQUEMA DE DECISÃO USANDO UMA ESTRUTA DE REPETIÇÃO "FOR", APARECER E SUMIR AO CLICAR -->
+    <ul onclick="decisao2()"> Menu3
+        <li class="subMenu3"> item 1 </li>
+        <li class="subMenu3"> item 2 </li>
+        <li class="subMenu3"> item 3 </li>
+        <li class="subMenu3"> item 4 </li>
+        <li class="subMenu3"> item 5 </li>
+    </ul>
+
+<!--RECEBENDO VALORES-->
+    <form action="">
+        <input type="text" name="nome" id="nome" placeholder="insira seu nome"><br>
+        <input type="text" name="idade" id="idade" placeholder="sua idade"><br>
+        <input type="text" name="email" id="email" placeholder="insira seu email"><br>
+
+        <input type="button" onclick="validadarInformacoes()">
+    </form>
+
+</body>
+</html>

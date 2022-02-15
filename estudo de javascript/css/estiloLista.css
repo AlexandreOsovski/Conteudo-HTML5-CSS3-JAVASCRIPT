@@ -1,0 +1,20 @@
+body{
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+ul{
+    background-color: black;
+    list-style: none;
+}
+.subMenu{
+    background-color: gray;
+    color: antiquewhite;
+}
+.subMenu2{
+    background-color: gray;
+    color: antiquewhite;
+}
+.subMenu3{
+    background-color: gray;
+    color: antiquewhite;
+}

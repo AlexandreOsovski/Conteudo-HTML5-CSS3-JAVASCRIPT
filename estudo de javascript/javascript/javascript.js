@@ -89,4 +89,12 @@ function validarCPF(){
     alert('campo CPF mudado com sucesso!')
 }
 
+/*
+OCULTANDO E EXIBINDO ELEMENTO
+    
+*/
+function inicial(){
+    
+}
+
 

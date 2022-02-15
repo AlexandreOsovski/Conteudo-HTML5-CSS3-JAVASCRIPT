@@ -77,3 +77,14 @@ p{
     height: 100px;
 }
 
+.menu{
+    display: block;
+    background-color: aquamarine;
+    padding: 10px;
+}
+.menu .subMenu{
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+    list-style: none;
+}
+
