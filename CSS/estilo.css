@@ -1,0 +1,664 @@
+/*
+    O QUE VOCÊ PODE FAZER COM CSS?<br>
+        .FORMATAÇÃO (PRINCIPAL)<br>
+        .DESIGN<br>
+        .ESTILIZAÇÃO (TUDO QUE É VISUAL)<br>
+        .POSICIONAMENTO (COMO AS COISAS FICAM POSICIONADAS NA TELA)<br>
+        .ANIMAÇÃO<br>
+        .DESENHO<br><br>
+    
+    3 FORMAS DE UTILIZAÇÃO<br>
+        .IN-LINE<br>
+        .EMBARCADO<br>
+        .EXTERNO <br>
+    
+
+        obs: sempre usar essas explicações dentro do seu projeto para que fique mais claro toda a matéria.<br>
+        obs: sempre usar essas explicações dentro do seu projeto para que fique mais claro toda a matéria.<br>
+        obs: sempre usar essas explicações dentro do seu projeto para que fique mais claro toda a matéria.<br>
+        obs: sempre usar essas explicações dentro do seu projeto para que fique mais claro toda a matéria.<br>
+
+
+-EXEMPLO - INLINE (DIRETAMENTE NAS TAGS DO HTML, É O MENOS RECOMENDADO, PORÉM, É UTILIZADO QUANDO A CONFIGURAÇÃO DO ELEMENTO É ÚNICO E SÓ VAI SER UTILIZADO UMA ÚNICA VEZ)<br>
+    
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 color: red; font-size: 30px> Olá Mundo! </h1> <!--CSS IN-LINE-->
+</body>
+</html>
+-------------------------------------------------------------------------------------------------------------------
+
+-EXEMPLO - EMBARCADO (DENTRO DA TAG HEAD)<br>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMBARCADOt</title>
+    
+    <style> 
+        h1{
+            color: red; 
+            font-size: 30px; /*CSS EMBARCADO*/
+        }
+        </style>
+    </head>
+    <body>
+        <h1>olá mundo!</h1>
+    </body>
+    </html>
+    
+    
+    -------------------------------------------------------------------------------------------------------------------
+    
+    EXEMPLO - EXTERNO (É FEITO UM LINK DENTRO DA TAG HEAD QUE CHAMA UM ARQUIVO EXTERNO)<br>
+    
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <link rel="stylesheet" href="/CSS/estilo.css"> <!--CSS EXTERNO-->
+    
+        <title>EXTERNO</title>
+    </head>
+    */
+    -------------------------------------------------------------------------------------------------------------------
+    
+    ESTRUTURA DO CSS  ( SUA ESTRURA É EXTREMAMENTE PADRONIZADO )<br>
+    
+        .SELETORES<br>
+        .PROPRIEDADES<br>
+        .VALORES<br>
+    
+    
+    SELETORES - TAGS, CLASSES e ID<br>
+    
+        TAG ou CLASSES -> São os seletores.<br>
+                TAG --> se utilizarmos as TAGS de um projeto, todas as tags que forem iguais, ficaram com as mesmas propriedades e valores<br>
+                    .Para chamar uma TAG, só é necessário chama-la<br>
+                        Ex:<br>
+                            <h1>Olá mundo</h1><br>
+    
+                            (dentro do css fica assim)<br>
+                                h1{
+                                    color:red;<br>
+                                }<br>
+    
+                CLASSES --> se utilizarmos classes em um projeto, apenas aquela classe ficará com as propriedades e valores que forem determinadas<br>
+                    .Para chamar uma classe, é necessário adicionar um ponto ( . ) antes do nome da classe.<br>
+                        Ex:
+                            <h1 classe="ola">Olá mundo</h1> <br>
+    
+                            (dentro do css fica assim)<br>
+                                .ola {
+                                    color:red;<br>
+                                }<br>
+    
+                Exemplo:<br>
+                    <h1> olá mundo! </h1> <-- são tags, e todas as tags que forem h1, terão suas propriedades mudadas.<br>
+                    <h1 class="ola"> olá mundo! </h1> <-- se selecionarmos a classe, apenas esse h1 mudará suas propriedades.<br>
+    
+    
+    
+                ID --> só vai ser usado para especificar apenas 1 elemento, NÃO PODE TER MAIS DE 1 ELEMENTO COM O MESMO ID, ID É ÚNICO.<br>
+                    .Para chamar um ID, é necessário usar um hastag ( # ) antes do nome atribuido ao ID.<br>
+                        Ex:
+                            <h1 class="ola" id="nome_ola">Olá Mundo!</h1><br>
+    
+                            (dentro do css fica assim)<br>
+                                #nome_ola{
+                                    color: red;<br>
+                                }<br>
+    -------------------------------------------------------------------------------------------------------------------
+    
+    PROPRIEDADES E VALORES (AS MAIS UTILIZADAS) <br>
+     .caso queira se aprofundar mais sobre as propriedades e valores, poderá acessar: https://www.w3schools.com/css/<br>
+    
+        .colors <br>
+            .podemos chamar as cores pelo NOME, HEXADECIMAL, RGB ou RGBA (RGBA possui a ultima letra que é o alpha, ou seja, vai ser a transparencia)<br>
+                 Ex:<br>
+                 <h1 class="ola">Olá mundo</h1>  <br>
+                 
+                 Ex: NOME da cor<br>
+    
+                 .ola{
+                     color: red;<br>
+                 }<br>
+    
+    
+                 Ex: HEXADECIMAL<br>
+    
+                 .ola{
+                     color: #FF000080; (podemos ainda adicionar um limite de transparencia dentro da cor HEXADECIMAL, b asta colocar um número qualquer de 0 a 100, no caso eu representei pelo número 80, ou seja, 80% de transparencia)
+                 }<br>
+    
+                 Ex: RGB<br>
+    
+                 .ola{
+                     color: rgb(255,0,0);<br>
+                 }<br>
+    
+                 Ex: RGB<br>
+    
+                 .ola{
+                     color: rgb(255,0,0,.8); <-- ".8" significa 80%<br>
+                 }<br>
+    
+    
+        .background-color<br>
+        .display<br>
+        .text<br>
+        .text-transform<br>
+    
+        VALOR -> São os valores que definimos nas propriedades, por exemplo:<br>
+        .font-family : 'Cabin' <-- 'cabin' é valor definido da propriedade<br>
+        .font-size: 30px; <--- 30px é o valor definido da propriedade<br>
+        .color: red; <--- red é o valor definido da propriedade<br>
+        .position: absolute; <-- faz o elemento flutuar a cima dos outros<br>
+    
+    -------------------------------------------------------------------------------------------------------------------
+    MARGIN , PADDING  E BOXES<br>
+        .boxes <-- é literalmente uma caixa, quadrados ou retangulos, são caixas de conteúdo<br>
+        .Padding <-- É a margem interna de uma caixa (Boxe)<br>
+        .Margin <-- É a margem externa de uma caixa (Boxe)<br>
+    
+        Ex:<br>
+        <!DOCTYPE html>
+        <html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>MARGIN, PADDING E BOXES</title>
+                
+                <style> 
+                    body{
+                        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                        font-size: 20px;
+                    }
+                    section{
+                        margin-bottom: 20px; /*margem de baixo*/
+                        background-color: wheat; /*cor de fundo*/
+                        padding: 10px; /*Margem interior do boxe*/
+                    }
+                    .primeiro > div  { /* A CLASS "PRIMEIRO" DIZ QUE AS "DIVS" DENTRO DA "SECTION" POSSUEM O COLOR AQUA*/
+    
+                        background-color: aqua; /* a cor definida para as divs é o aqua*/
+    
+                        display: block; /*o display está em formato de bloco*/
+    
+                        width: 40%; /*largura está em 40%*/
+    
+                        display: inline-block; /*o display está com o bloco embutido */
+    
+                        padding: 10px; /*Margem interior do boxe*/
+    
+                        vertical-align: top; /*alinhamento vertical no top*/
+    
+                        min-height: 180px; /*minimo de altura*/
+    
+                    }
+                    #segundo > div{
+                        background-color: blue;
+                    }
+    
+                    #caixa1{
+                        background-color: red;
+                        width: 200px; /*largura de 200px*/
+                        height: 200px; /*altura de 200px*/
+                        padding: 20px; /*Margem interna de 20px*/
+    
+                        /*widht 200px menos padding de 20px width=180px, o mesmo se aplica ao height*/
+    
+                    }
+                    .caixa2 {
+                        background-color: black;
+                        width: 100%;
+                        height: 100%;
+                        
+                    }
+                </style>
+            </head>
+    
+            <body>
+                <section class="primeiro">
+                    <div>
+                        <h2>Titulo Da noticia</h2>
+                        <p>olá mundo</p>
+                    </div>
+                    <div>
+                        <h2>titulo</h2>
+                        <p>Olá mundo</p>
+                    </div>
+                </section>
+    
+                <section id="segundo">
+                    <div>
+                        <h2>Titulo Da noticia</h2>
+                        <p>ADEUS mundo</p>
+                    </div>
+                    <div>
+                        <h2>titulo</h2>
+                        <p>ADEUS mundo</p>
+                    </div>
+                </section>
+    
+                <div id="caixa1">
+                    <div class="caixa2"></div>
+                </div>
+            </body>
+        </html>
+    -------------------------------------------------------------------------------------------------------------------
+    FONTES - É o que da a cara para tudo que usa letras e vai aparecer para o usuário final no site.<br>
+        .podemos usar o google fonts para usar uma fonte desejada.<br>
+        .temos fontes padrões também<br>
+    
+        Ex:
+            <style>
+                h1{
+                    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+                    back
+                }
+            </style>
+        
+        .Perceba que possui virgulas separando as fontes, e o que isso quer dizer? significa que se uma pessoa não possuí a determinada fonte em seu computador/celular<br>
+            o código pula pra outra fonte.<br>
+        .Digamos que a font 'Franklin Gothic Medium' não possui na maquina do usuário, o código vai selecionar outra font, que no caso é 'Arial Narrow' e assim em diante.<br>
+    
+    -------------------------------------------------------------------------------------------------------------------
+    BACKGROUND <br>
+        .Há vários tipos de backgrounds, os mais comuns são:<br>
+            .background-color:<br>
+            .background-image:<br>
+            .background-repet:<br>
+            .background-size:<br>
+            
+    
+            <style>
+                h1{
+                    background-color: ; /*define a cor de fundo*/
+                    background-image: ; /*define uma imagem para o fundo*/
+                    background-repeat: ; /*define se a imagem de fundo vai ou não repetir, para que não se repita, usamos o valor "no-repeat" e para repetir "repeat"*/
+                    background-size: ; /*define o tamanho do fundo*/
+                    
+                }   
+            </style>/
+    -------------------------------------------------------------------------------------------------------------------
+    DISPLAY, POSITION E FLOAT<br>
+        .É um assunto complicado, mesmo trabalhando com CSS, a dificuldade em se trabalhar com esses parâmetros será real.<br>
+    
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>EMBARCADOt</title>
+        
+        <style> 
+            body{
+                margin: 0px;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            }
+    
+            ul{
+                list-style: none; /* sem o estilo de lista */
+                background-color: blue;
+                padding: 0px; /*margem interna*/
+                margin: 0px; /*margem externa*/
+            }
+            ul > li {
+                display: inline-block; /*coloca um item ao lado do outro no formato de blocos*/
+                padding: 0px;
+                margin: 0px;
+                font-size: 24px; /*tamanho da fonte*/
+                padding: 10px;
+                margin: 5px;
+                background-color: aliceblue;
+            }
+            ul > li:hover{ /*hover serve pra quando a gente colocar o mouse em cima do item, o item muda de cor*/
+                background-color: aqua;
+                cursor: pointer ; /*definindo qual o estilo do cursor quando passar por cima do item*/
+            }
+            .conteudoQualquer{
+                font-size: 20px;
+                background-color: pink;
+                width: 500px;
+                height: 100px;
+                padding: 100px;
+                margin: auto; /*margem "auto" serve para centralizar elementos na tela*/
+                top: 0px; /*quero que o elemento fique no topo da página*/
+                left: 0px; /*quero que o elemento fique a direita da página*/
+                position: fixed; /*fixa a posição do elemento independente se a página está indo pra baixo, vai manter apenas uma posição */
+                                /*para que isso funcione, devemos excluir o margin "auto"*/
+            }
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li> lista 1 </li>
+            <li> lista 2 </li>
+            <li> lista 3 </li>
+            <li> lista 4 </li>
+        </ul>
+    
+        <div class="conteudoQualquer">
+            <h1>qualquer coisa</h1>
+        </div>
+    </body>
+    </html>
+    -------------------------------------------------------------------------------------------------------------------
+    BORDERS <br>
+        .Serve para deixar mais bonito as bordas das boxes<br>
+    
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>EMBARCADOt</title>
+        
+        <style> 
+            body{
+                margin: 0px;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            }
+    
+            ul{
+                list-style: none; /* sem o estilo de lista */
+                background-color: blue;
+                padding: 0px; /*margem interna*/
+                margin: 0px; /*margem externa*/
+            }
+            ul > li {
+                display: inline-block; /*coloca um item ao lado do outro no formato de blocos*/
+                padding: 0px;
+                margin: 0px;
+                font-size: 24px; /*tamanho da fonte*/
+                padding: 10px;
+                margin: 5px;
+                background-color: aliceblue;
+            }
+            ul > li:hover{ /*hover serve pra quando a gente colocar o mouse em cima do item, o item muda de cor*/
+                background-color: aqua;
+                cursor: pointer ; /*definindo qual o estilo do cursor quando passar por cima do item*/
+            }
+            .cantosArredondados{
+    
+                font-size: 20px;
+                background-color: red;
+                width: 500px;
+                height: 100px;
+    
+                /*Para a borda funcionar, precisamos que ela possua alguns valores*/
+                border: solid 4px black; /*Colocar qual o modelo da borda, o tamanho da borda e a cor*/
+                /*neste caso, usamos a borda: solida, com tamanho: 4px e cor: preta/*/
+                
+    
+                /*podemos escrever desta forma tambem*/
+                border-style: solid ; /*há vários modelos de estilo, cabe você saber qual o ideal pra vc*/
+                border: 4px;
+                border-color: black;
+                
+                /*Podemos usar o Border-radius*/
+                border-radius: 90px; /*ele serve para arredondar os cantos da borda, desta maneira ele vai arredondar todos da mesma maneira*/
+                border-radius: 10px 10px 0px 0px; /*desta maneira, você escolhe qual canto você quer arredondar, os de cima ficaram com 10px e os de baixo com 0px*/
+            }
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li> lista 1 </li>
+            <li> lista 2 </li>
+            <li> lista 3 </li>
+            <li> lista 4 </li>
+        </ul>
+    
+        <div class="cantosArredondados">
+            <h1>qualquer coisa</h1>
+        </div>
+    </body>
+    </html>
+    -------------------------------------------------------------------------------------------------------------------
+    TRANSFORMAÇÃO DE TEXTO<br>
+        .Podemos mudar a formatação de um texto<br>
+            .Alguns exemplos:<br>
+    
+        <style>
+            h1{
+                
+                text-transform: uppercase; /*trasnformando todo o texto em letras maiusculas*/
+                text-transform: lowercase; /*transforma todo o texto em letras minusculas*/
+                text-decoration: ; /*permite decorar um texto*/
+                text-align: ; /*permite alinhar o texto*/
+            }
+        </style>
+    -------------------------------------------------------------------------------------------------------------------
+    MEDIA QUERIES <br>
+        .permite o máximo de esilização possivel <br>
+        .permite fazer qualquer site ser responsivo<br>
+        .São condiçoes que facilitam os sites a se adaptarem com o tamanho da tela com o mesmo código<br>
+            .No contexto do CSS isso é uma definição.<br>
+            .Condicionais para o arquivo todo:<br>
+                #apenas TV --> o arquivo será selecionado se eu estiver vendo o conteúdo em uma televisão (media="tv")<br>
+                <link rel="stylesheet" href="arquivo.css" type="text/css" media="tv"><br>
+    
+                #apenas impressão <br>
+                <link rel="stylesheet" href="arquivo.css" type="text/css" media="print"><br>
+    
+                #apenas monitores coloridos<br>
+                <link rel="stylesheet" href="arquivo.css" type="text/css" media="screen and (color)"><br>
+    
+                #monitores coloridos e projeções coloridas<br>
+                <link rel="stylesheet" href="arquivo.css" type="text/css" media="screen and (color), projection and (color)"><br>
+    
+                #apenas monitores com tamanho máximo de 768px de largura<br>
+                @media screen and (max-width:768px)<br>
+    
+            .Operadores lógicos (exemplos)<br>
+                .not  <!--not print--><br>
+                .and  <!-- > 300px and < 768px--><br>
+                .only <!--Only > 768px--><br>
+    
+            #caracteristicas da situação que podemos analisar do usuário<br>
+                .width<br>
+                .height <br>
+                .device-width <br>
+                .device-height <br>
+                .orientation<br>
+        <!DOCTYPE html>
+            <html lang="pt-br">
+                <head>
+                    <meta charset="UTF-8">
+                    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Document</title>
+                    <style>
+                        .box{
+                            background-color: red;
+                            width: 100px;
+                            height: 100px;
+                        }
+                        @media screen and (max-width: 600px){
+                            .box{
+                                background-color: blue;
+                                border-radius: 100px;
+                            }
+                        }
+                    </style>
+    
+                </head>
+                <body>
+                    <section class="box">
+    
+                    </section>
+                </body>
+            </html>
+    -------------------------------------------------------------------------------------------------------------------
+    FLEXBOX<br>
+        .modelo de layout<br>
+        .substituiu os antigos displays<br>
+        .responde melhor os modelos de telas<br>
+        .baseado em containers<br><br>
+        .tudo o que é da web, é feito em container<br>
+    
+        .Mas o que que são containers?<br>
+                .é uma caixa que possui outras caixas dentro, e assim infinitamente.<br>
+        
+        .contrução de layouts com flexbox<br>
+                
+        <!DOCTYPE html>
+        <html lang="pt-br">
+            <head>
+                <meta charset="UTF-8">
+                <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Document</title>
+                <style>
+                    .linha1{ /*justify-content se usa no container*/
+                        display: flex; /*quer dizer que estou usando um flexbox*/
+                        flex-direction: row; /*significa que é uma linha, mas eu poderia usar um colum*/
+                        justify-content: space-around; /*quer dizer que possui um espaço em volta*/
+                       /* justify-content: space-evenly; o espaço em volta vai ser distribuido igualmente*/
+                       /* justify-content: space-between; todo o espaço vai ficar entre os boxes*/
+                       /* justify-content: flex-start; fica todo na direita da tela*/
+                       /* justify-content: flex-end; fica todo na esquerda da tela*/
+                       /* aligh-self: center; alinhamento do objeto*/
+                       /* flex-grow: 2; ocupa o espaço de 2 elementos*/
+                        }
+                    .toptop{
+                        background-color: aqua;
+                        width: 25%;
+                        padding: 1%; /*margem interna*/
+                    }
+                </style>
+    
+            </head>
+            <body>
+                <section class="linha1"> <!--container 1-->
+    
+                    <div class="toptop"> <!--container 2-->
+                        <h1>meu deus</h1>
+                        <p>meu deus em paragrafo kkk</p>
+                    </div>
+                
+                    <div class="toptop"> <!--container 3-->
+                        <h1>meu deus</h1>
+                        <p>meu deus em paragrafo kkk2</p>
+                    </div>
+                
+                    <div class="toptop"> <!--container 4-->
+                        <h1>meudeus</h1>
+                        <p>meu deus em paragrafo kkk3</p>
+                    </div>
+                
+                </section>
+            </body>
+        </html>
+    -------------------------------------------------------------------------------------------------------------------
+    ANIMAÇÕES<br>
+        .Serve para dar animação ao seu projeto<br>
+        .Da movimento aos seus projetos<br>
+    
+        .Situação atual <br>
+        .Gatilho <br>
+        .Nova situação<br>
+        .Transição <br>
+    
+        obs: sempre usar essas explicações dentro do seu projeto para que fique mais claro toda a matéria.<br>
+    
+        Exemplo: <br>
+            .hover (passando o mouse por cima do elemento)<br>
+            .transition (transição)<br>
+    
+            exemplo, tenho uma classe de um container chamada de "passarOMouse"<br>
+            <style>
+                .passarOMouse:hover{
+                    height: 300px; /*quero que ele aumente de tamanho quando eu passar o mouse por cima dele*/
+                }
+                .passarOMouse{
+                    transition: height 2s; /*quero que ele aumente por dois segundos*/
+                }
+            </style>
+    
+            .podemos dizer para ele mudar de cor quando passar o mouse por cima<br>
+            
+            <style>
+                .passarOMouse:hover{
+                    height: 300px; /*quero que ele aumente de tamanho quando eu passar o mouse por cima dele*/
+                    background-color: red;
+                }
+                .passarOMouse{
+                    transition: height 2s; /*quero que ele aumente por dois segundos*/
+    
+                }
+            </style>
+    
+    ANIMATION ---> estrutura (quase não se utiliza)<br>
+    
+            .BIBLIOTECA PARA FACILITAR A VIDA: hover.css (é um repositório de git)<br>
+    
+            .Constrói animações por slices (fatias) / frames (pedaços de tempo)<br>
+            .Aplica ao elemento <br>
+            .Define duração <br>
+            .Define o loop<br>
+    
+            EXEMPLO:<br>
+    
+        <!DOCTYPE html>
+        <html lang="pt-br">
+            <head>
+                <meta charset="UTF-8">
+                <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Document</title>
+                <style>
+                    .bola{
+                        background-color: red;
+                        width: 200px;
+                        height: 200px;
+                        border-radius: 100px;
+                        display: block;
+    
+                    }
+                    @keyframes minha-animacao {
+                        0%{
+                            transform: scale(0, .025);
+                            background-color: aqua;
+                        }
+                        50%{
+                            transform: scale(1 , .025);
+                            background-color: green;
+                        }
+                    }
+                    @media (prefers-reduced-motion: no-preference){
+                        .bola{
+                            animation-name: minha-animacao;
+                            animation-duration: 2s;
+                            animation-iteration-count: infinite;
+                        }
+                    }
+                </style>
+    
+            </head>
+            <body>
+                <section class="bola"> <!--container 1-->
+                    <div class="bola">
+    
+                    </div>
+                </section>
+            </body>
+        </html>

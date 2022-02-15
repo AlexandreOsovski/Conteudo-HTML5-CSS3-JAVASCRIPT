@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/estudo de javascript/estiloJavascript.css">
+    <script src="/estudo de javascript/javascript.js"></script>
+    <title>Estudo de javascript</title>
+
+</head>
+<body onload="javascript:funcaoSeletor2()"> <!--comando que ao carregar a página, o comando já é executado-->
+   
+   <!--FORMAS DE INCLUIR O JAVASCRIPT NO PROJETO-->
+
+    <!--Javascript inline-->
+    <h1>ESTUDO DE JAVASCRIPT</h1>
+    <input onclick="javascript=alert('javascript inline!')" type="button" value="vai!">
+
+    <h1>EXIBIR ALERTA</h1>
+    <input onclick="javascript:exibirAlerta()" type="button" value="alerta!">
+
+    <!--Javascript embarcado-->
+    <script>
+
+        function exibirAlerta(){
+            alert('javascript embarcado');
+        }
+
+    </script>
+
+    <!--VINDO DE UM ARQUIVO EXTERNO-->
+    <h1>ALERTA VINDO DE UM ARQUIVO EXTERNO</h1>
+    <input onclick="javascript:exibirAlerta2()" type="button" value="vamos nessa!">
+
+
+<!--COMANDOS BÁSICOS DE JAVASCRIPT-->
+
+    <h1>COMANDOS DE OUTPUT</h1>
+    <input onclick="javascript:comandosOutput()" type="submit" value="clica aqui!"> <br>
+
+
+    <div class="box" id="boxVermelho">
+        <h1>clica no botão abaixo!</h1>
+        <input onclick="javascript:pegarElementoPeloID()" type="button" value="botão do box!">
+    </div>
+    <br><br>
+
+    <div class="box2" id="boxVermelho2">
+        <h1>clica no botão abaixo!</h1>
+        <input onclick="javascript:consoleLog()" type="button" value="botão do box!">
+    </div
+    ><br><br>
+
+    <div class="box3" id="boxVermelho3">
+        <h1>clica no botão abaixo!</h1>
+        <input onclick="javascript:documentWrite()" type="button" value="botão do box!">
+    </div>
+    <br><br>
+
+    <div class="box4" id="boxVermelho4">
+        <h1>clica no botão abaixo!</h1>
+        <input onclick="javascript:confirme()" type="button" value="botão do box!">
+    </div>
+    <br><br>
+
+<hr>
+
+
+
+<!--SELETORES EM JAVASCRIPT-->
+    <div class="box5" id="boxVermelho5">
+        <h1>clica no botão abaixo!</h1>
+        <input onclick="javascript:funcaoSeletor()" type="button" value="botão do box!">
+    </div> <br><br>
+
+
+    <div class="box6"  id="boxVermelho6">
+        <input onclick="javascript:funcaoSeletor2()" type="button" value="ACIONAR!">
+
+    </div>
+
+    <p class="paragrafo"> paragrafo 1 </p> <!-- 0 -->
+    <p class="paragrafo"> paragrafo 2 </p> <!-- 2 --> <!--assim que o array funciona-->
+    <p class="paragrafo"> paragrafo 3 </p> <!-- 3 -->
+
+<hr>
+
+<!--EVENTOS DO JAVASCRIPT-->
+    <div class="validarCPF">
+        DIGITE SEU CPF
+    </div>
+    <input type="text" name="cpf" onchange="javascript:validarCPF()" placeholder="CPF">
+    
+</body>
+</html>
