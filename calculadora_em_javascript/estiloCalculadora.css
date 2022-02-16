@@ -1,18 +1,27 @@
+body{
+	display: flex;
+	background-image: url('/calculadora_em_javascript/img/img-background.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
 div{
     
 	background-color: #334d4d;
 	margin: 50px;
-	width: 350px;
+	width: 300px;
 	height: 550px;
 	margin: 0 auto;			
 	border-radius: 20px;
 	padding: 10px;
+    cursor: pointer;
+	box-shadow: 10px 10px 10px 10px gray;
 }
 
 header{
-	background-color: #d1e0e0;
-	width: 330px;
+	background-color: white;
+	width: 300px;
 	height: 100px;
+	
 	border-radius: 20px;
 	margin: 0 auto;	
 	font-size: xx-large;
@@ -24,10 +33,11 @@ header{
 .tabela {
 	background-color: #FFFFFF;
 	margin: 0 auto;
-	margin-top: 20px;
+	margin-top: 40px;
 	margin-right: 10px;
 	margin-left: 10px;
 	border-radius: 20px;
+	
 }
 
 td{
@@ -35,6 +45,7 @@ td{
 	height: 60px;
 	text-align: center;
 	font-size: xx-large;
+	
 
 }
 

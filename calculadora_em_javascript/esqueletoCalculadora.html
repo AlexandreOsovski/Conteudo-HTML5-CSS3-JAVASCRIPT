@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/calculadora em javascript/estiloCalculadora.css">
+    <link rel="stylesheet" href="/calculadora_em_javascript/estiloCalculadora.css">
     <script src="/calculadora em javascript/movimentoCalculadora.js"></script>
     <title>Calculadora</title>
 </head>
@@ -13,11 +13,13 @@
         <header id="telaCalculadora"></header>
             <table class="tabela">
                 <tbody>
+
                     <tr class="azul">
                         <td onclick = "Limpar('')"> AC </td>
                         <td onclick = "porcentagem('*0.01')"> % </td>
                         <td onclick = "divisao('/')"> / </td>
                     </tr>
+
                     <tr class="azul">
                         <td onclick = "somar('+')"> + </td>
                         <td onclick = "diminuir('-')"> - </td>
@@ -25,26 +27,26 @@
                     </tr>
 
                     <tr>
-                        <td onclick = "numero7('7')"> 7 </td>
-                        <td onclick = "numero8('8')"> 8 </td>
-                        <td onclick = "numero9('9')"> 9 </td>
+                        <td onclick = "numero('7')"> 7 </td>
+                        <td onclick = "numero('8')"> 8 </td>
+                        <td onclick = "numero('9')"> 9 </td>
                     </tr>
 
                     <tr>
-                        <td onclick = "numero4('4')" > 4 </td>
-                        <td onclick = "numero5('5')" > 5 </td>
-                        <td onclick = "numero6('6')" > 6 </td>
+                        <td onclick = "numero('4')" > 4 </td>
+                        <td onclick = "numero('5')" > 5 </td>
+                        <td onclick = "numero('6')" > 6 </td>
                     </tr>
 
                     <tr>
-                        <td onclick = "numero1('1')"> 1 </td>
-                        <td onclick = "numero2('2')"> 2 </td>
-                        <td onclick = "numero3('3')"> 3 </td>
+                        <td onclick = "numero('1')"> 1 </td>
+                        <td onclick = "numero('2')"> 2 </td>
+                        <td onclick = "numero('3')"> 3 </td>
                     </tr>
                     <tr>
-                        <td onclick = "numeroPonto('.')"> . </td>
-                        <td onclick = "numero0('0')"> 0 </td>
-                        <td onclick = "numeroIgual('=')"> = </td>
+                        <td onclick = "numero('.')"> . </td>
+                        <td onclick = "numero('0')"> 0 </td>
+                        <td onclick = "Igual('=')"> = </td>
                     </tr>
                 </tbody>
             </table>
