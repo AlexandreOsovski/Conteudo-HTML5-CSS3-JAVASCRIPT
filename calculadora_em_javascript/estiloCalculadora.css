@@ -2,7 +2,7 @@ body{
 	display: flex;
 	background-image: url('/calculadora_em_javascript/img/img-background.jpg');
 	background-repeat: no-repeat;
-	background-size: cover;
+	
 }
 div{
     
@@ -17,7 +17,7 @@ div{
 	box-shadow: 10px 10px 10px 10px gray;
 }
 
-header{
+#telaCalculadora{
 	background-color: white;
 	width: 300px;
 	height: 100px;
